@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLearn Sucks</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display">QLearn Sucks</h1>
+        <p class="lead">
+            Specifically Canvas LMS, but i'm in Queensland, and that's what Canvas has been called.
+        </p>
+        <hr>
+        <section id="section-good">
+            <h2 class="display section-header">
+                <a href="#section-good">The good parts</a>
+            </h2>
+            <p>
+                This website isn't "QLearn Is Good," so let's get this over and done with.
+                <ol>
+                    <li>
+                        <p>
+                            <b>The API</b>
+                        </p>
+                        <p>
+                            Canvas's API is probably one of the best API i've used. The docs are well written, and the
+                            PI covers everything that you could possibly want to do with Canvas.
+                        </p>
+                        <p>
+                            <small>
+                                It's also very useful if you hate QLearn and want to rewrite everything to your needs
+                            </small>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>RWD</b>
+                        </p>
+                        <p>
+                            The UI is very responsive, and works well on mobile. Canvas is designed for schools, where
+                            phones are banned. Nice one.
+                        </p>
+                    </li>
+                </ol>
+        </section>
+        <section id="section-ui">
+            <h2 class="display section-header">
+                <a href="#section-ui">UI Design</a>
+            </h2>
+            <p>
+                Let's start off with the UI. It's not the crappiest in the world, but it gets the job done.
+                It could be made better. Let's start off with whatever this is meant to be:<br>
+                <img src="img/ui-sidebar.png" alt="UI Sidebar" class="img-container">
+                Why do I need a damn scrollbar to see a navigation menu? Not every student has a 4K monitor.
+                Have the developers never heard of an overflow menu? It's so damn easy, i'll even do it myself
+                here.<br>
+                <noscript><small style="color:red;background-color: white;">ENABLE JAVASCRIPT TO VIEW</small></noscript>
+                <iframe src="examples/ui-sidebar.html"></iframe>
+                Wow! Look at how better that looks without the ugly scollbar, and it only took one line of
+                JavaScript.<br>
+                <pre style="font-family:monospace;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-weight: 400; padding-top:1px; padding-bottom: 1px;"><ol style="padding-left: 3em;"><li><span style="color: rgb(255, 123, 114); font-weight: 400;">document</span>.<span style="color: rgb(210, 168, 255); font-weight: 400;">querySelector</span>(<span style="color: rgb(165, 214, 255); font-weight: 400;">'.menu'</span>).<span style="color: rgb(201, 209, 217); font-weight: 400;">classList</span>.<span style="color: rgb(210, 168, 255); font-weight: 400;">toggle</span>(<span style="color: rgb(165, 214, 255); font-weight: 400;">'show'</span>)</li></ol></pre>
+                That's it! And you couldn't implement that in your UI? Shame on you.
+            </p>
+            <p>
+                I'm not done though. On mobile, you have actually implemented an overflow menu for the sidebar, from a hamburger. That's the exact same thing
+                as the overflow menu we've been wanting, but you've only implemented it on mobile. Have you heard
+                of this amazing life hack? It's called <code>CTRL + C</code> and <code>CTRL + V</code>. I bet all the
+                Canvas devs are going crazy in their office right now after finding about this.
+            </p>
+        </section>
+        <section id="section-accessibility">
+            <h2 class="display section-header">
+                <a href="#section-accessibility">Accessibility</a>
+            </h2>
+            <p>
+                The only damn accessibility feature in this app is an immersive reader.
+                Except for High Contrast, but it's not very effective:<br>
+                <img src="img/high-contrast.png" alt="High Contrast" class="img-container">
+                <em>Left: High Constrast off, Right: High Contrast on</em><br>
+                <blockquote>
+                    "Ooh! I don't give two and a half shits about people, lets just make the sidebar lighter and call it a day!"
+                    <br><cite>- Some dev from Canvas</cite>
+                </blockquote>
+                It's ridiculous. I don't think the devs realise that their white ass background burns into the eyes of users.
+                Define your damn CSS variables and create a dark mode setting.
+            </p>
+        </section>
+        <hr style="margin-top: 50px;">
+        <section style="font-size: 9pt;" class="aw">
+            <em><b>This website is not related to Canvas or QLearn in any way.</b></em>
+            <p>
+                This domain expires in <noscript><b>Enable JavaScript</b></noscript><span id="domain-expiry"></span>.
+                I am not renewing it.
+
+                <script>
+                    const expiry = new Date("May 10, 2025 00:00:00");
+
+                    setInterval(() => {
+                        const currentTime = new Date();
+                        const timeRemaining = Math.floor((expiry - currentTime) / 1000);
+
+                        const domainExpiryElement = document.getElementById("domain-expiry");
+                        domainExpiryElement.textContent = timeRemaining + " seconds";
+                    }, 1000);
+                </script>
+            </p>
+            <p>
+                This website was made by <a href="https://infatom.site">InfinityAtom</a>. Questions or concerns? Email
+                <a href="mailto:hello@qlearnsucks.tech">hello@qlearnsucks.tech</a> or <a href="mailto:hello@infatom.site">hello@infatom.site</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>

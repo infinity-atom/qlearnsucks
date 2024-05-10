@@ -1,0 +1,58 @@
+<style>
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+    }
+
+    .sidebar {
+        background-color: rgb(0, 47, 95);
+        color: white;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    .menu {
+        background-color: rgb(0, 47, 95);
+        color: white;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        transform: translateX(-150%);
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    .menu.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .item {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .item:hover {
+        background-color: rgba(0, 0, 0, 0.242);
+    }
+</style>
+
+<div class="sidebar">
+    <div class="item-group">
+        <div class="item" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">LINK</div>
+        <div class="item" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">LINK</div>
+    </div>
+    <div class="item" onclick="document.querySelector('.menu').classList.toggle('show')">MENU</div>
+</div>
+<div class="menu">
+    <div class="item" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">OVERFLOWED LINK</div>
+    <div class="item" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">OVERFLOWED LINK</div>
+    <div class="item" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">OVERFLOWED LINK</div>
+</div>

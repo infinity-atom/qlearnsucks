@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+h1.display {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+h2.display {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.section-header a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.section-header a::after {
+    content: "\e157";
+    font-family: "Material Symbols Outlined";
+    display: none;
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+
+.section-header a:hover::after {
+    display: inline;
+}
+
+.img-container {
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.aw a {
+    color: white;
+}
