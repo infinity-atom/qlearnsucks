@@ -11,21 +11,21 @@
         </v-app-bar>
         <v-main class="d-flex justify-center">
             <div class="content pa-5">
-                <v-alert
+                <!-- <v-alert
                     closable
                     icon="mdi-account-voice"
                     title="Content warning"
                     text="This website contains strong language. If you are a little child who cannot handle big words, you should leave."
                     color="primary"
                     class="mb-5"
-                ></v-alert>
+                ></v-alert> -->
 
                 <h1>UI Design</h1>
                 <p>
-                    Let's start off with the UI. It's not the shittiest in the world, but it does get the job done.
+                    Let's start off with the UI. It's not the <!-- shittiest --> worst in the world, but it does get the job done.
                 </p>
                 <p>
-                    Firstly, what the fuck is this sidebar?
+                    Firstly, what the <!-- fuck --> <s>hell</s> sigma is this sidebar?
                 </p>
                 <br>
                 <v-card :elevation="12">
@@ -33,9 +33,9 @@
                 </v-card>
                 <br>
                 <p>
-                    Why do I need a fucking scrollbar to see the whole navigation menu? Why do students
-                    need a 4K monitor to use your shitty navigation? Developers will be going crazy after
-                    they find out what a fucking overflow menu is.
+                    Why do I need a <!-- fucking --> scrollbar to see the whole navigation menu? Why do students
+                    need a 4K monitor to use your <!-- shitty --> bad navigation? Developers will be going crazy after
+                    they find out what a <!-- fucking --> overflow menu is.
                 </p>
                 <p>
                     The worst part is you made an overflow menu on mobile. You might want to try out this
@@ -44,10 +44,10 @@
                 <br>
                 <h1>Accessibility</h1>
                 <p>
-                    The only fucking accessibility feature on this website is an immersive reader.
+                    The only <!-- fucking --> accessibility feature on this website is an immersive reader.
                 </p>
                 <p>
-                    There's also a high contrast mode, but it is arse. Look at how effective this shit is:
+                    There's also a high contrast mode, but it is arse. Look at how effective this <!-- shit --> is:
                 </p>
                 <br>
                 <v-card :elevation="12">
@@ -59,7 +59,7 @@
                 </v-card>
                 <br>
                 <p>
-                    They must not give a shit about users. They just made the sidebar lighter and called it a fucking day.
+                    They must not give a <!-- shit --> damn about users. They just made the sidebar lighter and called it a <!-- fucking --> day.
                 </p>
                 <br>
                 <h1>Dark Mode</h1>
@@ -83,7 +83,8 @@
                         </p>
                         <br>
                         <p>
-                            This website was created by <a href="https://infinity-atom.org">infinity-atom</a>.
+                            This website was created by <a href="https://infinity-atom.org">infinity-atom</a>.<br>
+                            &copy; 2024 infinity-atom
                         </p>
                     </v-card-text>
                 </v-card>
